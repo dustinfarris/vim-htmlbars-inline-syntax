@@ -25,7 +25,7 @@ function! htmlbars_inline_syntax#highlight()
 
     " Apply syntax
 
-    execute 'syntax match MatchMUSTACHE /hbs`\(\_.\{-}\)`/ keepend containedIn=jsObjectValue contains=@SyntaxMUSTACHE'
+    execute 'syntax match MatchMUSTACHE /hbs`\(\_.\{-}\)`/ keepend containedIn=jsFuncBlock,jsParen,jsObjectValue contains=@SyntaxMUSTACHE'
 
 endfunction
 
