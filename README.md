@@ -21,7 +21,7 @@ Make sure you have installed [vim-mustache-handlebars](https://github.com/mustac
 In your vimrc:
 
 ```vim
-autocmd FileType javascript HighlightInlineHbs
+autocmd BufRead,BufNewFile *.js HighlightInlineHbs
 ```
 
 
